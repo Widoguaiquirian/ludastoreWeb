@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width" />
+
+      <title>Ludastore | Tu mejor opción</title>
+
+      <!-- NORMALIZE-->
+      <link rel="stylesheet" href="_layout/normalize.css" />
+
+      <!--CSS-->
+      <link rel="stylesheet" href="_layout/main.css" />
+
+      <!--PRINT-->
+      <!-- <link rel="stylesheet" href="" media="print"> -->
+
+      <!--FAVICON-->
+      <link rel="icon" href="_images/_icons/1favicon.ico" />
+      <link rel="icon" href="_images/_icons/1favicon.ico" type="image/svg+xml" />
+
+      <meta name="author" content="Luis Guaiquirian" />
+      <meta
+         name="description"
+         content="Luis Guaiquirian is an apprentice web programmer, specializing in front-end developer, student, based in Santiago de Chile, Chile, apprentice, web programmer, Venezuelan web developer, Chilean, front-end web programmer"
+      />
+      <meta name="keywords" content="Luis, Guaiquirian, Santiago web programmer, front-end developer" />
+
+      <!--
+    Luis Guaiquirian CHILE.
+    V:1.0
+
+    Launched: 20-06-2023
+  -->
+
+      <!--PAGES-->
+
+      <!--GOOGLE FONTS - MONSERRAT-->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet"
+      />
+
+      <!--BOXICON-->
+      <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+      <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+      <!-- ? FOR REGULAR COMMENTS -->
+   </head>
+   <body>
+      <!-- ? HEADER -->
+      <header class="header">
+         <div class="header-top">
+            <div class="top-nav-menu">
+               <nav class="navigation">
+                  <ul class="top-nav-menu-list">
+                     <li class="top-nav-menu-list-item"
+                        ><a class="top-nav-menu-link" href="#">Compre por categorias</a></li
+                     >
+                     <li class="top-nav-menu-list-item"> <a class="top-nav-menu-link" href="#">Compre por marca</a></li>
+                     <li class="top-nav-menu-list-item"
+                        ><a class="top-nav-menu-link" href="#">Compre en tiendas </a></li
+                     >
+                     <li class="top-nav-menu-list-item"> <a class="top-nav-menu-link" href="#">Call center</a></li>
+                     <li class="top-nav-menu-list-item"> <a class="top-nav-menu-link" href="#">Outlet</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <div class="header-middle">
+            <div class="middle-nav-menu">
+               <div class="hamburguer-menu-box">
+                  <i class="bx bx-menu"></i>
+               </div>
+               <img class="logo" src="_images/ludastore-logo.svg" alt="" />
+               <div class="search-form-row">
+                  <label for="search"></label>
+                  <input type="text" name="search" id="search" placeholder="Buscar en LUDASTORE" />
+                  <div class="search-icon-box">
+                     <i class="search-svg bx bx-search"></i>
+                  </div>
+               </div>
+               <div class="user-account-box">
+                  <i class="user-section-icons bx bxs-user-circle btn__show-modal"></i>
+                  <span class="user-section-text-user user-section-text btn__show-modal">Mi cuenta</span>
+               </div>
+               <div class="pedidos-box">
+                  <i class="user-section-icons bx bxs-truck"></i>
+                  <span class="user-section-text">Mis pedidos</span>
+               </div>
+               <div class="shop-car-box">
+                  <i class="user-section-icons bx bxs-cart-alt"></i>
+                  <span class="back-car"></span>
+               </div>
+            </div>
+         </div>
+         <div class="header-bottom">
+            <div class="bottom-nav-menu">
+               <ul class="bottom-nav-menu-list">
+                  <li class="bottom-nav-menu-list-item">
+                     <a class="bottom-nav-menu-link" href="#">Articulos de hogar</a>
+                  </li>
+                  <li class="bottom-nav-menu-list-item">
+                     <a class="bottom-nav-menu-link" href="#">Cocina</a>
+                  </li>
+                  <li class="bottom-nav-menu-list-item">
+                     <a class="bottom-nav-menu-link" href="#">Oficina</a>
+                  </li>
+                  <li class="bottom-nav-menu-list-item">
+                     <a class="bottom-nav-menu-link" href="#">Limpieza</a>
+                  </li>
+                  <li class="bottom-nav-menu-list-item">
+                     <a class="bottom-nav-menu-link" href="#">Belleza</a>
+                  </li>
+                  <li class="bottom-nav-menu-list-item">
+                     <a class="bottom-nav-menu-link" href="#">Fitness</a>
+                  </li>
+                  <li class="bottom-nav-menu-list-item">
+                     <a class="bottom-nav-menu-link" href="#">Ofertas</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </header>
+      <div class="slider-container">
+         <div class="slider">
+            <picture class="slide slide--1">
+               <source media="(max-width:599px)" srcset="_images/slider-1-mobile.png" />
+               <img src="_images/slider-1.png" alt="" />
+            </picture>
+            <picture class="slide slide--2">
+               <source media="(max-width:599px)" srcset="_images/slider-2-mobile.png" />
+               <img src="_images/slider-2.png" alt="" />
+            </picture>
+            <picture class="slide slide--3">
+               <source media="(max-width:599px)" srcset="_images/slider-3-mobile.png" />
+               <img src="_images/slider-3.png" alt="" />
+            </picture>
+         </div>
+         <button class="slider__btn slider__btn--left">&lt;</button>
+         <button class="slider__btn slider__btn--right">&gt;</button>
+         <div class="dots"></div>
+      </div>
+      <!-- ? MAIN -->
+      <main>
+         <section class="timer-feature">
+            <h2>Se acaban las ofertas en</h2>
+            <div class="timer-countdown">
+               <div class="box-timer days"> </div>
+               <div class="box-timer hours"> </div>
+               <div class="box-timer minutes"> </div>
+            </div>
+         </section>
+
+         <section class="section grid-section">
+            <h2>Los más vendidos 🔥 </h2>
+            <div class="grid__slider-box">
+               <div class="slide-grid slide-grid--1">
+                  <div class="slide__section slide__section-1">
+                     <div class="space"></div>
+                     <div class="grid-product grid-product-item-1">
+                        <div class="image-of-product">
+                           <img src="_images/product-1.png" alt="lorem ipsum dolor sit amet " />
+                        </div>
+                        <h3 class="grid-product-title">Lorem, ipsum dolor</h3>
+                        <p class="grid-product-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="grid-product-price"> $8.320 </div>
+                        <button class="btn btn-see-more">Ver más!</button>
+                     </div>
+                     <div class="grid-product grid-product-item-2">
+                        <div class="image-of-product">
+                           <img src="_images/product-2.png" alt="lorem ipsum dolor sit amet " />
+                        </div>
+                        <h3 class="grid-product-title">Lorem, ipsum dolor</h3>
+                        <p class="grid-product-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="grid-product-price"> $2.320 </div>
+                        <button class="btn btn-see-more">Ver más!</button>
+                     </div>
+                     <div class="grid-product grid-product-item-3">
+                        <div class="image-of-product">
+                           <img src="_images/product-3.png" alt="lorem ipsum dolor sit amet " />
+                        </div>
+                        <h3 class="grid-product-title">Lorem, ipsum dolor</h3>
+                        <p class="grid-product-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="grid-product-price"> $24.320 </div>
+                        <button class="btn btn-see-more">Ver más!</button>
+                     </div>
+                     <div class="grid-product grid-product-item-4">
+                        <div class="image-of-product">
+                           <img src="_images/product-4.png" alt="lorem ipsum dolor sit amet " />
+                        </div>
+                        <h3 class="grid-product-title">Lorem, ipsum dolor</h3>
+                        <p class="grid-product-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="grid-product-price"> $1.320 </div>
+                        <button class="btn btn-see-more">Ver más!</button>
+                     </div>
+                     <div class="space"></div>
+                  </div>
+               </div>
+               <div class="slide-grid slide-grid--2">
+                  <div class="slide__section slide__section-2">
+                     <div class="space"></div>
+                     <div class="grid-product grid-product-item-1">
+                        <div class="image-of-product">
+                           <img src="_images/product-5.png" alt="lorem ipsum dolor sit amet " />
+                        </div>
+                        <h3 class="grid-product-title">Lorem, ipsum dolor</h3>
+                        <p class="grid-product-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="grid-product-price"> $3.320 </div>
+                        <button class="btn btn-see-more">Ver más!</button>
+                     </div>
+                     <div class="grid-product grid-product-item-2">
+                        <div class="image-of-product">
+                           <img src="_images/product-6.png" alt="lorem ipsum dolor sit amet " />
+                        </div>
+                        <h3 class="grid-product-title">Lorem, ipsum dolor</h3>
+                        <p class="grid-product-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="grid-product-price"> $2.320 </div>
+                        <button class="btn btn-see-more">Ver más!</button>
+                     </div>
+                     <div class="grid-product grid-product-item-3">
+                        <div class="image-of-product">
+                           <img src="_images/product-7.png" alt="lorem ipsum dolor sit amet " />
+                        </div>
+                        <h3 class="grid-product-title">Lorem, ipsum dolor</h3>
+                        <p class="grid-product-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="grid-product-price"> $1.020 </div>
+                        <button class="btn btn-see-more">Ver más!</button>
+                     </div>
+                     <div class="grid-product grid-product-item-4">
+                        <div class="image-of-product">
+                           <img src="_images/product-8.png" alt="lorem ipsum dolor sit amet " />
+                        </div>
+                        <h3 class="grid-product-title">Lorem, ipsum dolor</h3>
+                        <p class="grid-product-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="grid-product-price"> $1.920 </div>
+                        <button class="btn btn-see-more">Ver más!</button>
+                     </div>
+                     <div class="space"></div>
+                  </div>
+               </div>
+               <div class="slide-grid slide-grid--3">
+                  <div class="slide__section slide__section-3">
+                     <div class="space"></div>
+                     <div class="grid-product grid-product-item-1">
+                        <div class="image-of-product">
+                           <img src="_images/product-9.png" alt="lorem ipsum dolor sit amet " />
+                        </div>
+                        <h3 class="grid-product-title">Lorem, ipsum dolor</h3>
+                        <p class="grid-product-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="grid-product-price"> $3.320 </div>
+                        <button class="btn btn-see-more">Ver más!</button>
+                     </div>
+                     <div class="grid-product grid-product-item-2">
+                        <div class="image-of-product">
+                           <img src="_images/product-10.png" alt="lorem ipsum dolor sit amet " />
+                        </div>
+                        <h3 class="grid-product-title">Lorem, ipsum dolor</h3>
+                        <p class="grid-product-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="grid-product-price"> $2.320 </div>
+                        <button class="btn btn-see-more">Ver más!</button>
+                     </div>
+                     <div class="grid-product grid-product-item-3">
+                        <div class="image-of-product">
+                           <img src="_images/product-11.png" alt="lorem ipsum dolor sit amet " />
+                        </div>
+                        <h3 class="grid-product-title">Lorem, ipsum dolor</h3>
+                        <p class="grid-product-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="grid-product-price"> $1.020 </div>
+                        <button class="btn btn-see-more">Ver más!</button>
+                     </div>
+                     <div class="grid-product grid-product-item-4">
+                        <div class="image-of-product">
+                           <img src="_images/product-6.png" alt="lorem ipsum dolor sit amet " />
+                        </div>
+                        <h3 class="grid-product-title">Lorem, ipsum dolor</h3>
+                        <p class="grid-product-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="grid-product-price"> $1.920 </div>
+                        <button class="btn btn-see-more">Ver más!</button>
+                     </div>
+                     <div class="space"></div>
+                  </div>
+               </div>
+               <button class="grid__btn grid__btn--left">&lt;</button>
+               <button class="grid__btn grid__btn--right">&gt;</button>
+               <div class="grid-dots"></div>
+            </div>
+         </section>
+
+         <section class="section grid-categories-section">
+            <h2>Comprar por categorias ⚡ </h2>
+            <section class="section grid-categories">
+               <div class="grid-categorie grid-categorie--1">
+                  <div class="categorie-photo">
+                     <img src="_images/categorie-1.png" alt="Categories names" />
+                  </div>
+                  <h4 class="grid-categorie-title">Electrodomésticos</h4>
+               </div>
+               <div class="grid-categorie grid-categorie--2">
+                  <div class="categorie-photo">
+                     <img src="_images/categorie-2.png" alt="Categories names" />
+                  </div>
+                  <h4 class="grid-categorie-title">Escritorios</h4>
+               </div>
+               <div class="grid-categorie grid-categorie--3">
+                  <div class="categorie-photo">
+                     <img src="_images/categorie-12.png" alt="Categories names" />
+                  </div>
+                  <h4 class="grid-categorie-title">Tecnología</h4>
+               </div>
+               <div class="grid-categorie grid-categorie--4">
+                  <div class="categorie-photo">
+                     <img src="_images/categorie-4.png" alt="Categories names" />
+                  </div>
+                  <h4 class="grid-categorie-title">Sofás</h4>
+               </div>
+               <div class="grid-categorie grid-categorie--5">
+                  <div class="categorie-photo">
+                     <img src="_images/categorie-5.png" alt="Categories names" />
+                  </div>
+                  <h4 class="grid-categorie-title">Comedores</h4>
+               </div>
+               <div class="grid-categorie grid-categorie--6">
+                  <div class="categorie-photo">
+                     <img src="_images/categorie-6.png" alt="Categories names" />
+                  </div>
+                  <h4 class="grid-categorie-title">Muebles de cuartos</h4>
+               </div>
+               <div class="grid-categorie grid-categorie--7">
+                  <div class="categorie-photo">
+                     <img src="_images/categorie-7.png" alt="Categories names" />
+                  </div>
+                  <h4 class="grid-categorie-title">Outdoor</h4>
+               </div>
+               <div class="grid-categorie grid-categorie--8">
+                  <div class="categorie-photo">
+                     <img src="_images/categorie-8.png" alt="Categories names" />
+                  </div>
+                  <h4 class="grid-categorie-title">Muebles</h4>
+               </div>
+               <div class="grid-categorie grid-categorie--9">
+                  <div class="categorie-photo">
+                     <img src="_images/categorie-9.png" alt="Categories names" />
+                  </div>
+                  <h4 class="grid-categorie-title">Sofás individuales</h4>
+               </div>
+               <div class="grid-categorie grid-categorie--10">
+                  <div class="categorie-photo">
+                     <img src="_images/categorie-10.png" alt="Categories names" />
+                  </div>
+                  <h4 class="grid-categorie-title">Muebles para el baño</h4>
+               </div>
+               <div class="grid-categorie grid-categorie--11">
+                  <div class="categorie-photo">
+                     <img src="_images/categorie-11.png" alt="Categories names" />
+                  </div>
+                  <h4 class="grid-categorie-title">Cuarto de niños</h4>
+               </div>
+               <div class="grid-categorie grid-categorie--12">
+                  <div class="categorie-photo">
+                     <img src="_images/categorie-3.png" alt="Categories names" />
+                  </div>
+                  <h4 class="grid-categorie-title">Sofás reclinables</h4>
+               </div>
+            </section>
+         </section>
+
+         <div class="modal hidden">
+            <div class="modal-content">
+               <button class="btn__close-modal">&times;</button>
+               <div class="modal-pieces modal-left">
+                  <h3>Ingresar</h3>
+                  <div class="login-options-list">
+                     <button class="login-option"
+                        >Login con Email
+                        <i class="modal-icons bx bxl-gmail"></i>
+                     </button>
+                     <button class="login-option"
+                        >Login con Google
+                        <i class="modal-icons bx bxl-google"></i>
+                     </button>
+                     <button class="login-option">
+                        Login con Facebook
+                        <i class="modal-icons bx bxl-facebook-square"></i>
+                     </button>
+                  </div>
+               </div>
+               <div class="modal-pieces modal-right">
+                  <h3>Registrarme</h3>
+                  <form class="modal-form">
+                     <!-- ? NOMBRE -->
+                     <div class="form-row">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" required pattern=".{2,}" />
+                        <span class="checkmark"></span>
+                     </div>
+                     <!-- ? APELLIDOS -->
+                     <div class="form-row">
+                        <label for="apellido">Apellidos:</label>
+                        <input type="text" name="apellidos" id="apellidos" required pattern=".{2,}" />
+                        <span class="checkmark"></span>
+                     </div>
+
+                     <!-- ? EMAIL -->
+                     <div class="form-row">
+                        <label for="email">Mail:</label>
+                        <input
+                           type="email"
+                           name="email"
+                           id="email"
+                           required
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        />
+                        <span class="checkmark"></span>
+                        <div class="errorMessage">Ingresa un correo valido.</div>
+                     </div>
+
+                     <!-- ? PASSWORD -->
+                     <div class="form-row">
+                        <label for="password">Constrasena:</label>
+                        <input
+                           type="password"
+                           name="password"
+                           id="password"
+                           required
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                        />
+                        <div class="errorMessage" id="error-input"
+                           >Tu contraseña debe contener al menos 6 caracteres, una mayuscula, una minuscula y un
+                           numero.</div
+                        >
+                        <span class="checkmark"></span>
+                     </div>
+
+                     <div class="form-row">
+                        <button class="btn btn-next">Siguiente &rarr;</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <section class="section background-video-section">
+            <h2>Asistencia telefónica 📞</h2>
+            <div class="video-container">
+               <h1
+                  >Agenda una cita online con uno de nuestros ejecutivos y te ayudaremos con tu compra sin ningún costo
+                  adicional. Llámanos al +56 9 56138119</h1
+               >
+               <video class="video-background" autoplay muted loop>
+                  <source src="_images/Woman talking on a video call(1).mp4" type="video/mp4" />
+               </video>
+            </div>
+         </section>
+         <div class="overlay hidden"></div>
+      </main>
+
+      <!-- ? FOOTER -->
+      <footer>
+         <div class="newsletter">
+            <div class="newsletter-content">
+               <h2>Suscribete a nuestro newsletter</h2>
+               <div class="form-row-newsletter">
+                  <input
+                     type="email"
+                     name="email"
+                     id="email"
+                     required
+                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                     placeholder="Ingresa tu email"
+                  />
+                  <button class="newsletter-button">Suscribirse</button>
+               </div>
+               <p>Recibiras un mail de bienvenida</p>
+            </div>
+         </div>
+         <div class="final-footer">
+            <div class="footer-sec footer-section-1">
+               <h3 class="footer-title-sec">Servicio al cliente</h3>
+               <ul class="footer-list-items">
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Preguntas frecuentes</a></li>
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Contáctanos</a></li>
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Ayúdanos a mejorar</a></li>
+                  <li class="footer-list-item"
+                     ><a class="footer-list-item-link btn__show-modal" href="#">Tu cuenta</a></li
+                  >
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Devoluciones</a></li>
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Gift cards</a></li>
+                  <li class="footer-list-item"
+                     ><a class="footer-list-item-link" href="#">Políticas de privacidad</a></li
+                  >
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Terminos de uso</a></li>
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Sitemap</a></li>
+               </ul>
+            </div>
+
+            <div class="footer-sec footer-section-2">
+               <h3 class="footer-title-sec">Sobre LUDASTORE</h3>
+               <ul class="footer-list-items">
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Sobre nosotros</a></li>
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Tiendas</a></li>
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Sorteos de LUDASTORE</a></li>
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Trabaja con nosotros</a></li>
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Newsletter</a></li>
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Ayudas sociales</a></li>
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Nuestra historia</a></li>
+               </ul>
+            </div>
+
+            <div class="footer-sec footer-section-3">
+               <h3 class="footer-title-sec">Noticias</h3>
+               <ul class="footer-list-items">
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Blog LUDASTORE</a></li>
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Tiendas</a></li>
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Sorteos de LUDASTORE</a></li>
+               </ul>
+            </div>
+            <div class="footer-sec footer-section-4">
+               <h3 class="footer-title-sec">Inspiración</h3>
+               <ul class="footer-list-items">
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Decoración</a></li>
+                  <li class="footer-list-item"><a class="footer-list-item-link" href="#">Revista digital</a></li>
+               </ul>
+            </div>
+            <div class="footer-sec footer-section-5">
+               <h3 class="footer-title-sec">Síguenos</h3>
+               <i class="footer-icons bx bxl-twitter"></i>
+               <i class="footer-icons bx bxl-facebook-square"></i>
+               <i class="footer-icons bx bxl-instagram-alt"></i>
+               <i class="footer-icons bx bxl-youtube"></i>
+            </div>
+            <div class="footer-sec footer-section-6">
+               <h3 class="footer-title-sec">Llámanos</h3>
+               <p>3444-0009</p>
+            </div>
+         </div>
+      </footer>
+      <script src="_layout/script.js"></script>
+   </body>
+</html>

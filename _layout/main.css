@@ -1,38 +1,5 @@
-/*CSS Stylesheet T.O.C. - Table of contents
-Created XX April XXXX
-Last update April XX: 
-
-
-Compatible Browser:
-Firefox V.85.0.2 (64-bit)
-Chrome V.89.0.4389.90 (Build oficial) (64 bits)
-Edge V.89.0.774.54 (Compilación oficial) (64 bits)
-Safari V. 
-
-
-=RESET % CONDITIONAL COMMENT
-=GENERAL
-=LAYOUT:
-=PAGES
-
-      =index
-
-/*--- General ---*/
-/*--- Header ---*/
-/*--- Navigation ---*/
-/*--- Main ---*/
-/*--- Aside ---*/
-/*--- Footer ---*/
-/*--- Revisar ---*/
-/*--- Error ---*/
-/*--- Media Query ---*/
-/*--- Animation CSS ---*/
-/* ? FOR REGULAR COMMENTS */
-
-/*--- General ---*/
-/*
-
-*/
+/* Created 01 June 2022
+Last update 21 July 2022:  */
 
 :root {
    --color-primary: #d3d4d9;
@@ -44,14 +11,8 @@ Safari V.
 
    --zI-1: 1;
    --zI-2: 2;
-   --zI-3: 3;
-   --zI-4: 4;
-   --zI-5: 5;
 
    --z-svg-car: var(--zI-2);
-
-   /* --z-slider__btn: var(--zI-1);
-   --z-cookie-message: var(--zI-2); */
 }
 
 * {
@@ -95,7 +56,6 @@ a {
    text-decoration: none;
 }
 
-/* ? FOR REGULAR COMMENTS */
 /* ! HEADER */
 
 /*--- Header ---*/
